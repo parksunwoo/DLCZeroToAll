@@ -1,0 +1,352 @@
+{
+  "nodes": [
+    {
+      "op": "null", 
+      "name": "data0", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "intentclassification0_embedding0_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(481, 50)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Embedding", 
+      "name": "intentclassification0_embedding0_fwd", 
+      "attrs": {
+        "dtype": "float32", 
+        "input_dim": "481", 
+        "output_dim": "50", 
+        "sparse_grad": "False"
+      }, 
+      "inputs": [[0, 0, 0], [1, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "intentclassification0_gru0_l0_i2h_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(90, 0)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Reshape", 
+      "name": "intentclassification0_gru0_reshape0", 
+      "attrs": {"shape": "-1"}, 
+      "inputs": [[3, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "intentclassification0_gru0_l0_h2h_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(90, 30)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Reshape", 
+      "name": "intentclassification0_gru0_reshape1", 
+      "attrs": {"shape": "-1"}, 
+      "inputs": [[5, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "intentclassification0_gru0_r0_i2h_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(90, 0)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Reshape", 
+      "name": "intentclassification0_gru0_reshape2", 
+      "attrs": {"shape": "-1"}, 
+      "inputs": [[7, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "intentclassification0_gru0_r0_h2h_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(90, 30)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Reshape", 
+      "name": "intentclassification0_gru0_reshape3", 
+      "attrs": {"shape": "-1"}, 
+      "inputs": [[9, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "intentclassification0_gru0_l0_i2h_bias", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(90,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Reshape", 
+      "name": "intentclassification0_gru0_reshape4", 
+      "attrs": {"shape": "-1"}, 
+      "inputs": [[11, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "intentclassification0_gru0_l0_h2h_bias", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(90,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Reshape", 
+      "name": "intentclassification0_gru0_reshape5", 
+      "attrs": {"shape": "-1"}, 
+      "inputs": [[13, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "intentclassification0_gru0_r0_i2h_bias", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(90,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Reshape", 
+      "name": "intentclassification0_gru0_reshape6", 
+      "attrs": {"shape": "-1"}, 
+      "inputs": [[15, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "intentclassification0_gru0_r0_h2h_bias", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(90,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Reshape", 
+      "name": "intentclassification0_gru0_reshape7", 
+      "attrs": {"shape": "-1"}, 
+      "inputs": [[17, 0, 0]]
+    }, 
+    {
+      "op": "_rnn_param_concat", 
+      "name": "intentclassification0_gru0__rnn_param_concat0", 
+      "attrs": {
+        "dim": "0", 
+        "num_args": "8"
+      }, 
+      "inputs": [[4, 0, 0], [6, 0, 0], [8, 0, 0], [10, 0, 0], [12, 0, 0], [14, 0, 0], [16, 0, 0], [18, 0, 0]]
+    }, 
+    {
+      "op": "_zeros", 
+      "name": "intentclassification0_gru0_intentclassification0_gru0_h0_0", 
+      "attrs": {
+        "__layout__": "LNC", 
+        "dtype": "float32", 
+        "shape": "(2, 0, 30)"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "RNN", 
+      "name": "intentclassification0_gru0_rnn0", 
+      "attrs": {
+        "bidirectional": "True", 
+        "mode": "gru", 
+        "num_layers": "1", 
+        "p": "0.2", 
+        "state_outputs": "True", 
+        "state_size": "30"
+      }, 
+      "inputs": [[2, 0, 0], [19, 0, 0], [20, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "data1", 
+      "inputs": []
+    }, 
+    {
+      "op": "SequenceMask", 
+      "name": "intentclassification0_sequencemask0", 
+      "attrs": {"use_sequence_length": "True"}, 
+      "inputs": [[21, 0, 0], [22, 0, 0]]
+    }, 
+    {
+      "op": "transpose", 
+      "name": "intentclassification0_transpose0", 
+      "attrs": {"axes": "(1, 0, 2)"}, 
+      "inputs": [[23, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "intentclassification0_dense0_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(10, 0)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "intentclassification0_dense0_bias", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(10,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "FullyConnected", 
+      "name": "intentclassification0_dense0_fwd", 
+      "attrs": {
+        "flatten": "False", 
+        "no_bias": "False", 
+        "num_hidden": "10"
+      }, 
+      "inputs": [[24, 0, 0], [25, 0, 0], [26, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "intentclassification0_dense1_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(10, 0)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "intentclassification0_dense1_bias", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(10,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "FullyConnected", 
+      "name": "intentclassification0_dense1_fwd", 
+      "attrs": {
+        "flatten": "True", 
+        "no_bias": "False", 
+        "num_hidden": "10"
+      }, 
+      "inputs": [[27, 0, 0], [28, 0, 0], [29, 0, 0]]
+    }
+  ], 
+  "arg_nodes": [
+    0, 
+    1, 
+    3, 
+    5, 
+    7, 
+    9, 
+    11, 
+    13, 
+    15, 
+    17, 
+    22, 
+    25, 
+    26, 
+    28, 
+    29
+  ], 
+  "node_row_ptr": [
+    0, 
+    1, 
+    2, 
+    3, 
+    4, 
+    5, 
+    6, 
+    7, 
+    8, 
+    9, 
+    10, 
+    11, 
+    12, 
+    13, 
+    14, 
+    15, 
+    16, 
+    17, 
+    18, 
+    19, 
+    20, 
+    21, 
+    23, 
+    24, 
+    25, 
+    26, 
+    27, 
+    28, 
+    29, 
+    30, 
+    31, 
+    32
+  ], 
+  "heads": [[30, 0, 0]], 
+  "attrs": {"mxnet_version": ["int", 10300]}
+}
